@@ -1,2 +1,4 @@
 # Normalize text files
 * text=auto
+
+*.py linguist-detectable=true
