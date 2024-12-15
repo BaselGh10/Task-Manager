@@ -1,4 +1,8 @@
 # Auto detect text files and perform LF normalization
-*.py linguist-detectlable=true
-*.htmlinguist-detectable=false
 * text=auto
+
+# Ensure Python files are prioritized for language detection
+*.py linguist-detectable=true
+
+# Exclude HTML files from language detection
+*.html linguist-detectable=false
