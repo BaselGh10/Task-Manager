@@ -1,8 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Normalize text files
 * text=auto
 
-# Ensure Python files are prioritized for language detection
+# Prioritize Python files for language detection
 *.py linguist-detectable=true
 
-# Exclude HTML files from language detection
-*.html linguist-detectable=false
+# Mark TeX and other document-like files as documentation
+*.tex linguist-documentation
+*.html linguist-documentation
+*.css linguist-documentation
+*.js linguist-documentation
+
+# Disable detection for other non-code files
+*.txt linguist-detectable=false
+*.md linguist-detectable=false
+*.json linguist-detectable=false
+*.yml linguist-detectable=false
+*.yaml linguist-detectable=false
